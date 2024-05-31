@@ -1,0 +1,102 @@
+/* Font */
+@font-face {
+    font-family: MiSans-Normal;
+    src: url(../font/MiSans-Normal.woff2);
+}
+
+@font-face {
+    font-family: MiSans-Bold;
+    src: url(../font/MiSans-Bold.woff2);
+}
+
+/* Design */
+:root {
+    --title: #323232;
+    --text: #646464;
+    --text-main: #ef8080;
+    --link: #4096ff;
+    --notice: #c8c8c8;
+    --container-color: #f5f5ff;
+    --canva-color: #ffffff;
+    --canva-footer-color: #323232;
+}
+
+.h1 {
+    color: var(--title);
+    font-family: MiSans-Bold;
+    font-size: 27px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.h2 {
+    color: var(--title);
+    font-family: MiSans-Bold;
+    font-size: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.h3 {
+    color: var(--title);
+    font-family: MiSans-Bold;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.h4 {
+    color: var(--title);
+    font-family: MiSans-Normal;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text {
+    color: var(--text);
+    font-family: MiSans-Normal;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.textarea {
+    color: var(--text);
+    font-family: MiSans-Normal;
+    font-size: 15px;
+    line-height: 40px;
+    white-space: normal;
+}
+
+.text-main {
+    color: var(--text-main);
+    font-family: MiSans-Normal;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.link {
+    color: var(--link);
+    font-family: MiSans-Normal;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.notice {
+    color: var(--notice);
+    font-family: MiSans-Normal;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

@@ -1,0 +1,103 @@
+/* Canva */
+::selection {
+    background: #38c68e;
+    color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--canva-color);
+    margin: 0px;
+    overflow: auto;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Super Change */
+:root {
+    --frame-item-width: 450px;
+}
+
+.frame {
+    background-color: var(--canva-color);
+    display: grid;
+    grid-template-rows: 100px auto 100px;
+    grid-template-columns: 50px auto 50px;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+}
+
+.frame-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--frame-item-width));
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 30px;
+    grid-area: 2/2/3/3;
+    min-width: var(--frame-item-width);
+    /* var(--frame-item-width) * 2 + column-gap */
+    max-width: 950px;
+}
+
+.frame-item {
+    display: grid;
+    grid-auto-rows: auto;
+    row-gap: 30px;
+    overflow-x: hidden;
+    place-content: start;
+    width: 100%;
+}
+
+.frame-item-template {
+    display: grid;
+    grid-auto-rows: auto;
+    row-gap: 20px;
+}
+
+/* Profile */
+.profile-icon-content {
+    border-radius: 30px;
+    height: 60px;
+    width: 60px;
+}
+
+.profile-introduction {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 10px;
+}
+
+.profile-contact {
+    display: grid;
+    /* [ var(--frame-item-width) - column-gap ] / 2 */
+    grid-template-columns: repeat(2, 205px);
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+/* Blog */
+.blog-jotting-container {
+    background-color: var(--container-color);
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 20px auto 20px;
+    grid-template-columns: 30px auto 30px;
+    width: var(--frame-item-width);
+}
+
+.blog-jotting-content {
+    grid-area: 2/2/3/3;
+}

@@ -23,10 +23,10 @@ body {
 
 /* Super Change */
 :root {
-    --frame-item-width: 450px;
+    --layout-item-width: 450px;
 }
 
-.frame {
+.layout {
     background-color: var(--canva-color);
     display: grid;
     grid-template-rows: 100px auto 100px;
@@ -36,21 +36,21 @@ body {
     width: 100%;
 }
 
-.frame-container {
+.layout-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, var(--frame-item-width));
+    grid-template-columns: repeat(auto-fill, var(--layout-item-width));
     grid-auto-rows: auto;
     grid-auto-flow: row;
     justify-content: center;
     column-gap: 50px;
     row-gap: 30px;
     grid-area: 2/2/3/3;
-    min-width: var(--frame-item-width);
-    /* var(--frame-item-width) * 2 + column-gap */
+    min-width: var(--layout-item-width);
+    /* var(--layout-item-width) * 2 + column-gap */
     max-width: 950px;
 }
 
-.frame-item {
+.layout-item {
     display: grid;
     grid-auto-rows: auto;
     row-gap: 30px;
@@ -59,10 +59,23 @@ body {
     width: 100%;
 }
 
-.frame-item-template {
+.layout-item-template {
     display: grid;
     grid-auto-rows: auto;
     row-gap: 20px;
+}
+
+.layout-item-jotting {
+    background-color: var(--container-color);
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 20px auto 20px;
+    grid-template-columns: 30px auto 30px;
+    width: var(--layout-item-width);
+}
+
+.layout-item-jotting-container {
+    grid-area: 2/2/3/3;
 }
 
 /* Profile */
@@ -80,24 +93,10 @@ body {
 
 .profile-contact {
     display: grid;
-    /* [ var(--frame-item-width) - column-gap ] / 2 */
+    /* [ var(--layout-item-width) - column-gap ] / 2 */
     grid-template-columns: repeat(2, 205px);
     grid-auto-rows: auto;
     grid-auto-flow: row;
     row-gap: 20px;
     column-gap: 30px;
-}
-
-/* Blog */
-.blog-jotting-container {
-    background-color: var(--container-color);
-    border-radius: 10px;
-    display: grid;
-    grid-template-rows: 20px auto 20px;
-    grid-template-columns: 30px auto 30px;
-    width: var(--frame-item-width);
-}
-
-.blog-jotting-content {
-    grid-area: 2/2/3/3;
 }

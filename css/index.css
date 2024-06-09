@@ -60,6 +60,12 @@ body {
     row-gap: 20px;
 }
 
+.layout-item-innerTemplate {
+    display: grid;
+    grid-auto-rows: auto;
+    row-gap: 10px;
+}
+
 .layout-item-jotting {
     background-color: var(--container-color);
     border-radius: 10px;
@@ -74,22 +80,10 @@ body {
 }
 
 /* Profile */
-.profile-icon-content {
+.profile-icon {
     border-radius: 30px;
     height: 60px;
     width: 60px;
-}
-
-.profile-template {
-    display: grid;
-    grid-auto-rows: auto;
-    row-gap: 20px;
-}
-
-.profile-introduction {
-    display: grid;
-    grid-auto-rows: auto;
-    row-gap: 10px;
 }
 
 .profile-contact {

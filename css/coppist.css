@@ -9,13 +9,19 @@
     src: url(../font/MiSans-Bold.woff2);
 }
 
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../font/Poppins-Regular.ttf);
+}
+
 /* Design */
 :root {
     --title: #323232;
     --text: #646464;
-    --text-main: #ef8080;
+    --main: #ef8080;
     --link: #4096ff;
-    --notice: #c8c8c8;
+    --notice: #969696;
+    --date: #969696;
     --container-color: #f5f5ff;
     --canva-color: #ffffff;
     --canva-footer-color: #323232;
@@ -74,8 +80,8 @@
     white-space: normal;
 }
 
-.text-main {
-    color: var(--text-main);
+.main {
+    color: var(--main);
     font-family: MiSans-Normal;
     font-size: 15px;
     overflow: hidden;
@@ -85,6 +91,7 @@
 
 .link {
     color: var(--link);
+    cursor: pointer;
     font-family: MiSans-Normal;
     font-size: 15px;
     overflow: hidden;
@@ -95,6 +102,15 @@
 .notice {
     color: var(--notice);
     font-family: MiSans-Normal;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.date {
+    color: var(--date);
+    font-family: Poppins-Regular;
     font-size: 15px;
     overflow: hidden;
     text-overflow: ellipsis;

@@ -43,6 +43,7 @@ body {
     column-gap: 60px;
     row-gap: 30px;
     grid-area: 2/2/3/3;
+    width: 100%;
 }
 
 .layout-item {
@@ -50,7 +51,7 @@ body {
     grid-auto-rows: auto;
     row-gap: 30px;
     overflow-x: hidden;
-    place-content: start;
+    align-content: start;
     width: var(--layout-item-width);
 }
 
@@ -58,12 +59,14 @@ body {
     display: grid;
     grid-auto-rows: auto;
     row-gap: 20px;
+    width: 100%;
 }
 
 .layout-item-innerTemplate {
     display: grid;
     grid-auto-rows: auto;
     row-gap: 10px;
+    width: 100%;
 }
 
 .layout-item-jotting {
@@ -72,11 +75,12 @@ body {
     display: grid;
     grid-template-rows: 20px auto 20px;
     grid-template-columns: 30px auto 30px;
-    width: var(--layout-item-width);
+    width: 100%;
 }
 
 .layout-item-jotting-container {
     grid-area: 2/2/3/3;
+    width: 100%;
 }
 
 /* Profile */
@@ -93,19 +97,23 @@ body {
     grid-auto-flow: row;
     justify-content: space-between;
     row-gap: 30px;
+    width: 100%;
 }
 
 @media (width <= 1080px) {
     .layout-container {
         grid-template-columns: var(--layout-item-width);
     }
-    .profile-contact {
-        grid-template-columns: auto;
-    }
 }
 
 @media (width <= 510px) {
     :root {
         --layout-item-width: 100%;
+    }
+    .layout {
+        justify-content: normal;
+    }
+    .profile-contact {
+        grid-template-columns: auto;
     }
 }

@@ -16,19 +16,37 @@
 
 /* Design */
 :root {
+    /* Bright */
     --title: #323232;
     --text: #646464;
     --main: #ef8080;
     --link: #4096ff;
     --notice: #969696;
     --date: #969696;
-    --container-color: #f5f5ff;
+    --jotting-color: #f5f5ff;
+    --footer-color: #323232;
     --canva-color: #ffffff;
-    --canva-footer-color: #323232;
+    --point-normal-color: #38c68e;
+    --point-ongoing-color: #ffa940;
+    --point-obsolescent-color: #c8c8c8;
+    /* Dark */
+    --title-dark: #ffffff;
+    --text-dark: #c8c8c8;
+    --jotting-color-dark: #646464;
+    --canva-color-dark: #323232;
 }
 
 .h1 {
     color: var(--title);
+    font-family: MiSans-Bold;
+    font-size: 27px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.h1-dark {
+    color: var(--title-dark);
     font-family: MiSans-Bold;
     font-size: 27px;
     overflow: hidden;
@@ -45,8 +63,26 @@
     white-space: nowrap;
 }
 
+.h2-dark {
+    color: var(--title-dark);
+    font-family: MiSans-Bold;
+    font-size: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .h3 {
     color: var(--title);
+    font-family: MiSans-Bold;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.h3-dark {
+    color: var(--title-dark);
     font-family: MiSans-Bold;
     font-size: 15px;
     overflow: hidden;
@@ -63,6 +99,15 @@
     white-space: nowrap;
 }
 
+.h4-dark {
+    color: var(--title-dark);
+    font-family: MiSans-Normal;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .text {
     color: var(--text);
     font-family: MiSans-Normal;
@@ -72,8 +117,25 @@
     white-space: nowrap;
 }
 
+.text-dark {
+    color: var(--text-dark);
+    font-family: MiSans-Normal;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .textarea {
     color: var(--text);
+    font-family: MiSans-Normal;
+    font-size: 15px;
+    line-height: 40px;
+    white-space: normal;
+}
+
+.textarea-dark {
+    color: var(--text-dark);
     font-family: MiSans-Normal;
     font-size: 15px;
     line-height: 40px;
@@ -115,4 +177,25 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.point-normal {
+    background-color: var(--point-normal-color);
+    border-radius: 5px;
+    height: 10px;
+    width: 10px;
+}
+
+.point-ongoing {
+    background-color: var(--point-ongoing-color);
+    border-radius: 5px;
+    height: 10px;
+    width: 10px;
+}
+
+.point-obsolescent {
+    background-color: var(--point-obsolescent-color);
+    border-radius: 5px;
+    height: 10px;
+    width: 10px;
 }

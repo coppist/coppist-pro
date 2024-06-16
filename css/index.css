@@ -146,6 +146,9 @@ body {
     .layout {
         justify-content: normal;
     }
+    .layout-footer {
+        justify-content: normal;
+    }
     .layout-justifyItem {
         grid-template-columns: auto;
     }

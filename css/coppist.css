@@ -161,6 +161,16 @@
     white-space: nowrap;
 }
 
+.link-footer {
+    color: var(--text-dark);
+    cursor: pointer;
+    font-family: MiSans-Normal;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .notice {
     color: var(--notice);
     font-family: MiSans-Normal;
